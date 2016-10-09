@@ -6,10 +6,13 @@ a =int(a)
 
 if a == 1:
     print("You will be drink 'Coffee'")
+    drink = "Coffe"
 elif a == 2:
     print("You will be drink 'Tea'")
+    drink = "Tea"
 elif a == 3:
     print("You will be drink 'Kakao'")
+    drink = "Kakao"
 else:
     print("You enter not right nomber!")
 
@@ -19,7 +22,13 @@ b =input("1-Yes or 2-not?")
 b =int(b)
 if b == 1:
     print("With sugar")
+    sugar = "with sugar"
+    c = input('how math?: ')
+    sugar = sugar + " " + c
 elif b == 2:
     print("Withaut sugar")
+    sugar = "withaut sugar"
 else:
     print("You enter not right nomber!")
+
+print(drink, sugar)
